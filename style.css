@@ -105,6 +105,36 @@ nav {
   background: rgba(42,88,212,.08);
 }
 
+/* ─── NAV TOGGLE (mobile hamburger) ──────────────────────────────── */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 36px; height: 36px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 0;
+  flex-shrink: 0;
+  z-index: 101;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 21px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform .25s ease, opacity .25s ease;
+}
+
+nav.nav-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+nav.nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
+nav.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 /* ─── PAGE WRAPPER ────────────────────────────────────────────────── */
 .page {
   position: relative; z-index: 1;
@@ -672,7 +702,47 @@ footer {
   .stats-row { flex-direction: column; }
   .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
   .stat-item:last-child { border-bottom: none; }
-  .nav-links a { padding: .45rem .5rem; font-size: .8rem; }
+}
+
+/* ─── RESPONSIVE NAV (hamburger menu) ────────────────────────────── */
+@media (max-width: 780px) {
+  nav { padding: 0 1rem; }
+
+  .nav-toggle { display: flex; }
+
+  .nav-links {
+    position: fixed;
+    top: var(--nav-h);
+    left: 0; right: 0;
+    margin-left: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: rgba(248,249,252,.98);
+    backdrop-filter: blur(20px) saturate(1.4);
+    border-bottom: 1px solid var(--border);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
+  }
+
+  nav.nav-open .nav-links {
+    max-height: 500px;
+    box-shadow: 0 12px 24px rgba(0,0,0,.08);
+  }
+
+  .nav-links li { width: 100%; }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: .95rem;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+  }
+
+  .nav-links li:last-child a { border-bottom: none; }
 }
 
 /* ─── PAGE-SPECIFIC HERO VARIANTS ─────────────────────────────────── */
