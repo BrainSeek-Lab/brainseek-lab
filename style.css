@@ -702,6 +702,9 @@ footer {
   .stats-row { flex-direction: column; }
   .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
   .stat-item:last-child { border-bottom: none; }
+  .mini-stats { flex-direction: column; }
+  .mini-stat { border-right: none; border-bottom: 1px solid var(--border); }
+  .mini-stat:last-child { border-bottom: none; }
 }
 
 /* ─── RESPONSIVE NAV (hamburger menu) ────────────────────────────── */
