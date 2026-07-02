@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrainSeek Lab | IIT Madras</title>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">
+    <span ></span>BrainSeek Lab
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="members.html">Members</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="facility.html">Facility</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li>
+      <a href="https://github.com/BrainSeek-Lab" target="_blank" rel="noopener" title="GitHub" style="display:flex;align-items:center;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.19 1.78 1.19 1.03 1.78 2.71 1.26 3.37.97.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.06.78 2.14 0 1.54-.01 2.79-.01 3.17 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<div class="page">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-tag">Deep Learning &amp; Neuromorphic Computing · IIT Madras</div>
+    <h1>Efficient, Robust &amp;<br><em>Brain-Inspired AI</em></h1>
+    <p class="hero-sub">
+      BrainSeek Lab works across the full stack of modern deep learning — from adversarial robustness
+      and model compression to spiking neural networks and neuromorphic hardware.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="publications.html">View Research</a>
+      <a class="btn btn-ghost" href="members.html">Meet the Team</a>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="section pt-0 pb-0">
+    <div class="stats-row">
+      <div class="stat-item">
+        <span class="stat-num"><em>3</em></span>
+        <span class="stat-label">Publications</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num"><em>13</em>+</span>
+        <span class="stat-label">GPUs across 3 HPC Clusters</span>
+      </div>      
+      <div class="stat-item">
+        <span class="stat-num"><em>10</em></span>
+        <span class="stat-label">Team Members</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <!-- RESEARCH AREAS -->
+  <div class="section">
+    <div class="section-label">Focus Areas</div>
+    <h2 class="section-title">What We Work On</h2>
+    <p class="section-sub">
+      Our research spans the breadth of modern deep learning — algorithmic efficiency, robustness,
+      brain-inspired computing, and efficient language models.
+    </p>
+
+    <div class="research-grid">
+
+      <div class="research-card">
+        <span class="rc-icon">🛡️</span>
+        <div class="rc-title">Adversarial Attacks &amp; Defence</div>
+        <div class="rc-desc">Studying how deep learning models fail under adversarial perturbations and building robust defences — from certified defences to empirical hardening of vision and language models.</div>
+      </div>
+
+      <div class="research-card">
+        <span class="rc-icon">📦</span>
+        <div class="rc-title">Model Compression &amp; Quantization</div>
+        <div class="rc-desc">Making neural networks smaller and faster without sacrificing accuracy. We work on pruning, quantization-aware training, and hardware-aware compression for efficient deployment.</div>
+      </div>
+
+      <div class="research-card">
+        <span class="rc-icon">🎓</span>
+        <div class="rc-title">Knowledge Distillation</div>
+        <div class="rc-desc">Transferring the knowledge of large teacher models into compact student networks — enabling capable models to run on resource-constrained devices.</div>
+      </div>
+
+      <div class="research-card">
+        <span class="rc-icon">🗣️</span>
+        <div class="rc-title">Small Language Models</div>
+        <div class="rc-desc">Designing efficient SLMs (including ShisuLM) for constrained environments. We explore architecture choices, training strategies, and distillation techniques for capable small-scale language models.</div>
+      </div>
+
+      <div class="research-card">
+        <span class="rc-icon">⚡</span>
+        <div class="rc-title">Spiking Neural Networks</div>
+        <div class="rc-desc">Designing and training SNNs for energy-efficient inference — including ANN-SNN conversion (PASCAL), direct training, and biologically plausible learning rules like Equilibrium Propagation.</div>
+      </div>
+
+      <div class="research-card">
+        <span class="rc-icon">🔬</span>
+        <div class="rc-title">Neuromorphic Hardware</div>
+        <div class="rc-desc">Building DL accelerators tailored for sparse, spike-based computation. We exploit dual sparsity (APex) and design quantization schemes for real-time neuromorphic deployment.</div>
+      </div>
+
+      <div class="research-card">
+        <span class="rc-icon">🌀</span>
+        <div class="rc-title">Energy Based Models</div>
+        <div class="rc-desc">Exploring energy-based learning frameworks as principled alternatives to standard supervised training — including Equilibrium Propagation as a biologically plausible credit assignment mechanism.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <!-- RECENT PUBLICATIONS PREVIEW -->
+  <div class="section">
+    <div class="section-label">Latest Work</div>
+    <h2 class="section-title">Recent Publications</h2>
+    <p class="section-sub">A selection of recent work from BrainSeek Lab.</p>
+
+    <div class="pub-list">
+
+      <a class="pub-card" href="https://arxiv.org/abs/2505.01730" target="_blank">
+        <div class="pub-year">2025</div>
+        <div class="pub-body">
+          <div class="pub-badges">
+            <span class="badge badge-teal">TMLR 2025</span>
+            <span class="badge badge-blue">ANN-SNN Conversion</span>
+          </div>
+          <div class="pub-title">PASCAL: Precise and Efficient ANN-SNN Conversion using Spike Accumulation and Adaptive Layerwise Activation</div>
+          <div class="pub-desc">A mathematically grounded method to convert ANNs to SNNs with minimal inference timesteps. ResNet-34 achieves ~74% ImageNet accuracy with a 56× reduction in timesteps over prior methods.</div>
+          <span class="pub-link">arxiv.org/abs/2505.01730</span>
+        </div>
+      </a>
+
+      <div class="pub-card pub-card-static">
+        <div class="pub-year">2025</div>
+        <div class="pub-body">
+          <div class="pub-badges">
+            <span class="badge badge-blue">IEEE ISVLSI</span>
+            <span class="badge badge-amber">Hardware</span>
+          </div>
+          <div class="pub-title">APEX: A Dual-Sparsity Accelerator for Precise and Efficient SNN Inference</div>
+          <div class="pub-desc">Exploiting both spatial and temporal sparsity in SNNs simultaneously for efficient neuromorphic accelerator design, presented at IEEE ISVLSI.</div>
+        </div>
+      </div>
+
+      <a class="pub-card" href="https://arxiv.org/abs/2509.26003" target="_blank">
+        <div class="pub-year">2024</div>
+        <div class="pub-body">
+          <div class="pub-badges">
+            <span class="badge badge-teal">Energy Based Models</span>
+            <span class="badge badge-blue">Bio-Inspired Learning</span>
+          </div>
+          <div class="pub-title">Scaling Equilibrium Propagation to Deeper Networks</div>
+          <div class="pub-desc">Extending the Equilibrium Propagation framework to scale on deeper architectures, bridging the gap with standard backpropagation in practical settings.</div>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="mt-md text-center">
+      <a class="btn btn-ghost" href="publications.html">All Publications →</a>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <!-- PI SPOTLIGHT -->
+  <div class="section">
+    <div class="section-label">Principal Investigator</div>
+    <!-- <h2 class="section-title">Lab Director</h2> -->
+
+    <div class="pi-card">
+      <div class="pi-avatar">GS</div>
+      <div>
+        <div class="pi-name">Gopalakrishnan Srinivasan</div>
+        <div class="pi-role">Assistant Professor &amp; Narayanan Family Foundation Fellow</div>
+        <div class="pi-dept">Department of Computer Science and Engineering, IIT Madras, Chennai, India.</div>
+        <div class="mt-sm">
+          <a class="member-link" href="mailto:sgopal@cse.iitm.ac.in">✉ sgopal@cse.iitm.ac.in</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-brand">BrainSeek Lab</div>
+  <div class="footer-copy">© 2025 BrainSeek Lab, IIT Madras · Chennai, India</div>
+</footer>
+
+</body>
+</html>

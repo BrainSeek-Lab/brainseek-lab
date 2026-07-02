@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications | BrainSeek Lab</title>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">
+    <span></span>BrainSeek Lab
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="members.html">Members</a></li>
+    <li><a href="publications.html" class="active">Publications</a></li>
+    <li><a href="facility.html">Facility</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+
+  <div class="hero-sm">
+    <div class="section-label section-label-sm">Research Output</div>
+    <h1>Publications</h1>
+    <p>Peer-reviewed work from BrainSeek Lab spanning neuromorphic computing, spiking networks, and efficient AI.</p>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+
+    <!-- 2025 -->
+    <div class="section-label section-label-lg">2025</div>
+    <div class="pub-list pub-list-mb">
+
+      <a class="pub-card" href="https://arxiv.org/abs/2505.01730" target="_blank">
+        <div class="pub-year">2025</div>
+        <div class="pub-body">
+          <div class="pub-badges">
+            <span class="badge badge-teal">Transactions on ML Research (TMLR)</span>
+            <span class="badge badge-blue">ANN-SNN Conversion</span>
+            <span class="badge badge-blue">SNN</span>
+          </div>
+          <div class="pub-title">PASCAL: Precise and Efficient ANN-SNN Conversion using Spike Accumulation and Adaptive Layerwise Activation</div>
+          <div class="pub-desc">
+            SNNs offer energy efficiency over ANNs by replacing multiply-accumulate ops with sparse accumulate ops. PASCAL achieves a mathematically exact ANN-SNN equivalence using a novel spike accumulation scheme and adaptive per-layer quantization of the QCFS activation. ResNet-34 reaches ~74% ImageNet accuracy with a <strong class="hi-teal">56× reduction</strong> in inference timesteps versus prior methods.
+          </div>
+          <div class="pub-authors">
+            <span class="pub-authors">Pranav Ramesh, Gopalakrishnan Srinivasan</span>
+          </div>
+        </div>
+      </a>
+
+      <div class="pub-card">
+        <div class="pub-year">2025</div>
+        <div class="pub-body">
+          <div class="pub-badges">
+            <span class="badge badge-blue">IEEE ISVLSI</span>
+            <span class="badge badge-amber">Hardware Accelerator</span>
+            <span class="badge badge-blue">SNN</span>
+          </div>
+          <div class="pub-title">APEX: A Dual-Sparsity Accelerator for Precise and Efficient SNN Inference</div>
+          <div class="pub-desc">
+            APex is a hardware accelerator design that simultaneously exploits both spatial sparsity (zero activations within a timestep) and temporal sparsity (silent neurons across timesteps) in SNNs, enabling significant energy and compute savings on neuromorphic hardware. Published at IEEE International Symposium on VLSI (ISVLSI).
+          </div>
+          <div class="pub-affil">BrainSeek Lab, IIT Madras</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 2024 -->
+    <div class="section-label section-label-lg">2024</div>
+    <div class="pub-list">
+
+      <a class="pub-card" href="https://arxiv.org/abs/2509.26003" target='_blank'>
+        <div class="pub-year">2024</div>
+        <div class="pub-body">
+          <div class="pub-badges">
+            <span class="badge badge-teal">Conference</span>
+            <span class="badge badge-blue">Bio-Inspired Learning</span>
+          </div>
+          <div class="pub-title">Scaling Equilibrium Propagation to Deeper Networks</div>
+          <div class="pub-desc">
+            Equilibrium Propagation (EP) is a biologically plausible learning rule that eliminates the need for explicit error backpropagation. This work addresses the key challenge of making EP practical on deeper architectures, narrowing the gap with standard gradient-based training on complex vision benchmarks.
+          </div>
+          <div class="pub-authors">
+            <span class="pub-authors">Sankar Vinayak, Gopalakrishnan Srinivasan</span>
+          </div>
+        </div>
+      </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-brand">BrainSeek Lab</div>
+  <div class="footer-copy">© 2025 BrainSeek Lab, IIT Madras · Chennai, India</div>
+</footer>
+
+</body>
+</html>

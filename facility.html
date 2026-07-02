@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facility | BrainSeek Lab</title>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">
+    <span></span>BrainSeek Lab
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="members.html">Members</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="facility.html" class="active">Facility</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+
+  <div class="hero-sm">
+    <div class="section-label section-label-sm">Infrastructure</div>
+    <h1>Facility</h1>
+    <p>High-performance GPU resources spread across lab workstations, on-premises servers, and national HPC clusters.</p>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+
+    <div class="section-label section-label-md">Compute Resources</div>
+    <div class="facility-grid">
+
+      <!-- Desktops -->
+      <div class="facility-card">
+        <div class="fac-header">
+          <div class="fac-icon">🖥️</div>
+          <div class="fac-name">Lab Desktops</div>
+        </div>
+        <div class="fac-spec">9 Workstations · NVIDIA RTX 4090 &amp; RTX 5090</div>
+        <div class="fac-note">Day-to-day development machines for prototyping, ablations, and fast iteration on DL and SNN workloads. Mix of RTX 4090 (24 GB) and the latest RTX 5090 GPUs.</div>
+      </div>
+
+      <!-- Lab Server -->
+      <div class="facility-card">
+        <div class="fac-header">
+          <div class="fac-icon">⚡</div>
+          <div class="fac-name">Lab Server</div>
+        </div>
+        <div class="fac-spec">4 × NVIDIA RTX Ada 6000 — 48 GB VRAM · 220 GB RAM</div>
+        <div class="fac-note">On-premises GPU server for memory-intensive training runs. 192 GB total GPU VRAM with a large 220 GB system RAM — suited for large-batch training, LLM fine-tuning, and hardware simulation.</div>
+      </div>
+
+      <!-- CDAC -->
+      <div class="facility-card">
+        <div class="fac-header">
+          <div class="fac-icon">🏛️</div>
+          <div class="fac-name">CDAC HPC Cluster</div>
+        </div>
+        <div class="fac-spec">NVIDIA A100 GPUs — National Supercomputing Mission</div>
+        <div class="fac-note">Access to CDAC's national-scale HPC infrastructure powered by A100 GPUs for large-scale model training and compute-heavy research experiments.</div>
+      </div>
+
+      <!-- RBCDSAI -->
+      <div class="facility-card">
+        <div class="fac-header">
+          <div class="fac-icon">🔗</div>
+          <div class="fac-name">RBCDSAI Cluster</div>
+        </div>
+        <div class="fac-spec">NVIDIA V100 GPUs — IIT Madras Shared HPC</div>
+        <div class="fac-note">Access to IIT Madras's Robert Bosch Centre for Data Science and AI shared HPC cluster for distributed training and collaborative large-scale experiments.</div>
+      </div>
+
+      <!-- Param Shakti -->
+      <div class="facility-card">
+        <div class="fac-header">
+          <div class="fac-icon">🚀</div>
+          <div class="fac-name">PARAM Shakti Supercomputer</div>
+        </div>
+        <div class="fac-spec">NVIDIA A100 GPUs — IIT Madras HPC Facility</div>
+        <div class="fac-note">
+          Access to the PARAM Shakti supercomputing facility at IIT Madras, featuring NVIDIA A100 GPUs for large-scale deep learning, high-performance computing, and data-intensive AI research.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SUMMARY STATS -->
+    <div class="mini-stats">
+      <div class="mini-stat">
+        <div class="mini-stat-num teal">9</div>
+        <div class="mini-stat-label">RTX 4090 / 5090 Workstations<br>for everyday research & prototyping</div>
+      </div>
+
+      <div class="mini-stat">
+        <div class="mini-stat-num blue">4× RTX Ada 6000</div>
+        <div class="mini-stat-label">On-premises server for on-the-fly training, large models & experiments</div>
+      </div>
+
+      <div class="mini-stat">
+        <div class="mini-stat-num amber">220 GB</div>
+        <div class="mini-stat-label">High-memory server for large-batch workloads</div>
+      </div>
+
+      <div class="mini-stat">
+        <div class="mini-stat-num text">A100 &amp; V100</div>
+        <div class="mini-stat-label">National & IIT Madras HPC access for large-scale training</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-brand">BrainSeek Lab</div>
+  <div class="footer-copy">© 2025 BrainSeek Lab, IIT Madras · Chennai, India</div>
+</footer>
+
+</body>
+</html>
