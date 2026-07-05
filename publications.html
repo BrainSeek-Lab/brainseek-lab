@@ -10,7 +10,9 @@
 
 <nav>
   <a class="nav-brand" href="index.html">
-    <span></span>BrainSeek Lab
+    <img src="images/iit-madras.png" alt="IIT Madras" class="nav-logo">
+    <img src="images/logo3.png" alt="BrainSeek Lab" class="nav-logo">
+    <!-- <span ></span>BrainSeek Lab -->
   </a>
   <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -19,6 +21,7 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="members.html">Members</a></li>
     <li><a href="publications.html" class="active">Publications</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
     <li><a href="facility.html">Facility</a></li>
     <li><a href="contact.html">Contact</a></li>
     <li>
@@ -36,16 +39,89 @@
   <div class="hero-sm">
     <div class="section-label section-label-sm">Research Output</div>
     <h1>Publications</h1>
-    <p>Peer-reviewed work from BrainSeek Lab spanning neuromorphic computing, spiking networks, and efficient AI.</p>
+    <p>Peer-reviewed work from BrainSeek Lab spanning microarchitecture security, RISC-V SoC design, neuromorphic computing, spiking networks, and efficient AI</p>
   </div>
 
   <hr class="sep">
 
   <div class="section">
 
+    <!-- 2026 -->
+    <div class="section-label section-label-lg">2026</div>
+    <div class="pub-list pub-list-mb">
+      <a class="pub-card" href="https://ieeexplore.ieee.org/abstract/document/11539184" target='_blank'>
+        <div class="pub-year">2026</div>
+        <div class="pub-body">
+          <div class="pub-badges">
+            <span class="badge badge-teal">DATE 2026</span>
+            <span class="badge badge-blue">MicroArchitecture Security</span>
+          </div>
+          <div class="pub-title">SPOILER-GUARD: Gating Latency Effects of Memory Accesses through Randomized Dependency Prediction</div>
+          <div class="pub-desc">
+            SPOILER-GUARD is a hardware defense against transient execution attacks that exploit false dependencies from partial address aliasing (the SPOILER attack). It randomizes the physical address bits used in load-store comparisons, cutting misspeculation to 0.0004% while improving integer/FP performance by 2.12%/2.87%, with minimal hardware overhead. Accepted at DATE 2026
+          </div>
+          <div class="pub-authors">
+            <span class="pub-authors">Gayathri Subramanian, P Girinath, Nitya Ranganathan, Kamakoti Veezhinathan, Gopalakrishnan Srinivasan</span>
+          </div>
+        </div>
+      </a>
+
+      <div class="pub-card">
+        <div class="pub-year">2026</div>
+        <div class="pub-body">
+          <div class="pub-badges">
+            <span class="badge badge-blue">IEEE ISVLSI 2026</span>
+            <span class="badge badge-amber">Hardware Accelerator</span>
+            <span class="badge badge-blue">SNN</span>
+          </div>
+          <div class="pub-title">APEX: A Dual-Sparsity Accelerator for Precise and Efficient SNN Inference</div>
+          <div class="pub-desc">
+            APex is a hardware accelerator design that simultaneously exploits both spatial sparsity (zero activations within a timestep) and temporal sparsity (silent neurons across timesteps) in SNNs, enabling significant energy and compute savings on neuromorphic hardware. Published at IEEE International Symposium on VLSI (ISVLSI).
+          </div>
+          <div class="pub-affil">Devgokul Bawa Venkatesh, Sreeram Radhakrishnan, Rajshekhar Rakshit, Gopalakrishnan Srinivasan </div>
+        </div>
+      </div>
+
+    </div>
+
     <!-- 2025 -->
     <div class="section-label section-label-lg">2025</div>
-    <div class="pub-list pub-list-mb">
+    <div class="pub-list">
+
+      <a class="pub-card" href="https://arxiv.org/abs/2509.26003" target='_blank'>
+        <div class="pub-year">2025</div>
+        <div class="pub-body">
+          <div class="pub-badges">
+            <span class="badge badge-teal">ICEdge 2025</span>
+            <span class="badge badge-blue">Energy Based Learning</span>
+          </div>
+          <div class="pub-title">Scaling Equilibrium Propagation to Deeper Neural Network Architectures</div>
+          <div class="pub-desc">
+            Equilibrium Propagation (EP) is a biologically plausible learning rule that eliminates the need for explicit error backpropagation. This work addresses the key challenge of making EP practical on deeper architectures, narrowing the gap with standard gradient-based training on complex vision benchmarks.
+          </div>
+          <div class="pub-authors">
+            <span class="pub-authors">Sankar Vinayak, Gopalakrishnan Srinivasan</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="pub-card" href="https://ieeexplore.ieee.org/abstract/document/11261772" target='_blank'>
+        <div class="pub-year">2025</div>
+        <div class="pub-body">
+          <div class="pub-badges">
+            <span class="badge badge-teal">ISLPED 2025</span>
+            <span class="badge badge-blue">Model Inference</span>
+          </div>
+          <div class="pub-title">QuAKE: Speeding up Model Inference Using Quick and Approximate Kernels for Exponential Non-Linearities</div>
+          <div class="pub-desc">
+            QuAKE introduces fast approximations for exponential-based nonlinearities (Softmax, GELU, Logistic) that are common bottlenecks in Transformer inference. 
+            Instead of relying on specialized hardware or lookup tables, it exploits properties of the IEEE-754 floating-point representation itself to compute cheap, accurate approximations of the exponential function. The approach yields measurable inference speedups — 10-35% on server CPUs and 5-45% on other tested hardware without needing extra memory or precomputation.
+          </div>
+          <div class="pub-authors">
+            <span class="pub-authors">Sai Kiran Narayanaswami, Gopalakrishnan Srinivasan, Balaraman Ravindran</span>
+          </div>
+        </div>
+      </a>
 
       <a class="pub-card" href="https://arxiv.org/abs/2505.01730" target="_blank">
         <div class="pub-year">2025</div>
@@ -61,45 +137,6 @@
           </div>
           <div class="pub-authors">
             <span class="pub-authors">Pranav Ramesh, Gopalakrishnan Srinivasan</span>
-          </div>
-        </div>
-      </a>
-
-      <div class="pub-card">
-        <div class="pub-year">2025</div>
-        <div class="pub-body">
-          <div class="pub-badges">
-            <span class="badge badge-blue">IEEE ISVLSI</span>
-            <span class="badge badge-amber">Hardware Accelerator</span>
-            <span class="badge badge-blue">SNN</span>
-          </div>
-          <div class="pub-title">APEX: A Dual-Sparsity Accelerator for Precise and Efficient SNN Inference</div>
-          <div class="pub-desc">
-            APex is a hardware accelerator design that simultaneously exploits both spatial sparsity (zero activations within a timestep) and temporal sparsity (silent neurons across timesteps) in SNNs, enabling significant energy and compute savings on neuromorphic hardware. Published at IEEE International Symposium on VLSI (ISVLSI).
-          </div>
-          <div class="pub-affil">BrainSeek Lab, IIT Madras</div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- 2024 -->
-    <div class="section-label section-label-lg">2024</div>
-    <div class="pub-list">
-
-      <a class="pub-card" href="https://arxiv.org/abs/2509.26003" target='_blank'>
-        <div class="pub-year">2024</div>
-        <div class="pub-body">
-          <div class="pub-badges">
-            <span class="badge badge-teal">Conference</span>
-            <span class="badge badge-blue">Bio-Inspired Learning</span>
-          </div>
-          <div class="pub-title">Scaling Equilibrium Propagation to Deeper Networks</div>
-          <div class="pub-desc">
-            Equilibrium Propagation (EP) is a biologically plausible learning rule that eliminates the need for explicit error backpropagation. This work addresses the key challenge of making EP practical on deeper architectures, narrowing the gap with standard gradient-based training on complex vision benchmarks.
-          </div>
-          <div class="pub-authors">
-            <span class="pub-authors">Sankar Vinayak, Gopalakrishnan Srinivasan</span>
           </div>
         </div>
       </a>

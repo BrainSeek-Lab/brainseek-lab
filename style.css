@@ -78,6 +78,13 @@ nav {
   animation: pulse-dot 2.5s ease-in-out infinite;
 }
 
+.nav-logo {
+  height: 60px;
+  width: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
 @keyframes pulse-dot {
   0%,100% { opacity: 1; box-shadow: 0 0 10px rgba(10,158,122,.5); }
   50%      { opacity: .5; box-shadow: 0 0 4px rgba(10,158,122,.3); }
@@ -485,6 +492,14 @@ hr.divider {
   color: #fff;
   margin-bottom: 1.1rem;
   letter-spacing: 0em;
+  overflow: hidden;
+}
+
+.member-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
 }
 
 .member-avatar.teal  { background: linear-gradient(135deg, #0a7a5a, var(--teal)); }
@@ -526,7 +541,7 @@ hr.divider {
   line-height: 1.55;
 }
 
-.member-links { margin-top: .9rem; display: flex; gap: .5rem; }
+.member-links { margin-top: .9rem; display: flex; flex-wrap: wrap; gap: .5rem; }
 .member-link {
   font-family: var(--font-mono);
   font-size: .68rem;
@@ -806,6 +821,13 @@ footer {
   font-weight: 800;
   color: #fff;
   flex-shrink: 0;
+  overflow: hidden;
+}
+.pi-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
 }
 .pi-name {
   font-family: var(--font-head);
@@ -937,3 +959,78 @@ footer {
 
 /* Badge size variant */
 .badge-sm { font-size: .65rem; padding: .2rem .55rem; }
+/* ---------- Teaching section ---------- */
+.teach-block {
+  margin-bottom: 2rem;
+}
+.teach-block:last-child {
+  margin-bottom: 0;
+}
+.teach-block-title {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: .8rem;
+  padding-left: .7rem;
+  border-left: 3px solid var(--blue);
+}
+.teach-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+.teach-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .88rem;
+}
+.teach-table thead th {
+  text-align: left;
+  font-family: var(--font-head);
+  font-size: .72rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--blue);
+  background: var(--surface-2);
+  padding: .75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.teach-table tbody td {
+  padding: .7rem 1rem;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.teach-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.teach-table tbody tr:hover {
+  background: var(--bg-2);
+}
+.teach-period {
+  color: var(--text-muted);
+  white-space: nowrap;
+  font-family: var(--font-mono);
+  font-size: .82rem;
+}
+.teach-code {
+  color: var(--teal);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.teach-sno {
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  text-align: center;
+  width: 1%;
+}
+
+@media (max-width: 640px) {
+  .teach-table { font-size: .82rem; }
+  .teach-table thead th,
+  .teach-table tbody td { padding: .6rem .7rem; }
+}

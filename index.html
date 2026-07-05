@@ -10,7 +10,9 @@
 
 <nav>
   <a class="nav-brand" href="index.html">
-    <span ></span>BrainSeek Lab
+    <img src="images/iit-madras.png" alt="IIT Madras" class="nav-logo">
+    <img src="images/logo3.png" alt="BrainSeek Lab" class="nav-logo">
+    <!-- <span ></span>BrainSeek Lab -->
   </a>
   <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -19,8 +21,10 @@
     <li><a href="index.html" class="active">Home</a></li>
     <li><a href="members.html">Members</a></li>
     <li><a href="publications.html">Publications</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
     <li><a href="facility.html">Facility</a></li>
     <li><a href="contact.html">Contact</a></li>
+     
     <li>
       <a href="https://github.com/BrainSeek-Lab" target="_blank" rel="noopener" title="GitHub" style="display:flex;align-items:center;">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -37,11 +41,12 @@
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-grid"></div>
-    <div class="hero-tag">Deep Learning &amp; Neuromorphic Computing · IIT Madras</div>
+    <div class="hero-tag">Deep Learning, Neuromorphic Computing &amp; MicroArchitecture  · IIT Madras</div>
     <h1>Efficient, Robust &amp;<br><em>Brain-Inspired AI</em></h1>
     <p class="hero-sub">
-      BrainSeek Lab works across the full stack of modern deep learning — from adversarial robustness
-      and model compression to spiking neural networks and neuromorphic hardware.
+      BrainSeek Lab works across the full stack of modern deep learning and computer architecture — from
+      microarchitecture security and RISC-V based SoC design to adversarial robustness, model compression,
+      spiking neural networks, and neuromorphic hardware.
     </p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="publications.html">View Research</a>
@@ -53,7 +58,7 @@
   <div class="section pt-0 pb-0">
     <div class="stats-row">
       <div class="stat-item">
-        <span class="stat-num"><em>3</em></span>
+        <span class="stat-num"><em>4+</em></span>
         <span class="stat-label">Publications</span>
       </div>
       <div class="stat-item">
@@ -61,7 +66,7 @@
         <span class="stat-label">GPUs across 3 HPC Clusters</span>
       </div>      
       <div class="stat-item">
-        <span class="stat-num"><em>10</em></span>
+        <span class="stat-num"><em>16</em></span>
         <span class="stat-label">Team Members</span>
       </div>
     </div>
@@ -74,11 +79,23 @@
     <div class="section-label">Focus Areas</div>
     <h2 class="section-title">What We Work On</h2>
     <p class="section-sub">
-      Our research spans the breadth of modern deep learning — algorithmic efficiency, robustness,
-      brain-inspired computing, and efficient language models.
+      Our research spans hardware and software — secure microarchitecture and RISC-V SoC design,
+      algorithmic efficiency, robustness, brain-inspired computing, and efficient language models.
     </p>
 
     <div class="research-grid">
+
+      <div class="research-card">
+        <span class="rc-icon">🔒</span>
+        <div class="rc-title">Microarchitecture Security</div>
+        <div class="rc-desc">Investigating side-channel and speculative-execution vulnerabilities at the microarchitecture level, and designing hardware-level mitigations that preserve performance while closing security gaps.</div>
+      </div>
+
+      <div class="research-card">
+        <span class="rc-icon">⚙️</span>
+        <div class="rc-title">RISC-V Based SoC Design</div>
+        <div class="rc-desc">Building custom RISC-V based systems-on-chip tailored for efficient, secure, and neuromorphic-aware compute — bridging our architecture and hardware accelerator research with open ISA design.</div>
+      </div>
 
       <div class="research-card">
         <span class="rc-icon">🛡️</span>
@@ -135,42 +152,40 @@
 
     <div class="pub-list">
 
-      <a class="pub-card" href="https://arxiv.org/abs/2505.01730" target="_blank">
-        <div class="pub-year">2025</div>
-        <div class="pub-body">
-          <div class="pub-badges">
-            <span class="badge badge-teal">TMLR 2025</span>
-            <span class="badge badge-blue">ANN-SNN Conversion</span>
+      <div class="pub-list pub-list-mb">
+        <a class="pub-card" href="https://ieeexplore.ieee.org/abstract/document/11539184" target='_blank'>
+          <div class="pub-year">2026</div>
+          <div class="pub-body">
+            <div class="pub-badges">
+              <span class="badge badge-teal">DATE 2026</span>
+              <span class="badge badge-blue">MicroArchitecture Security</span>
+            </div>
+            <div class="pub-title">SPOILER-GUARD: Gating Latency Effects of Memory Accesses through Randomized Dependency Prediction</div>
+            <div class="pub-desc">
+              SPOILER-GUARD is a hardware defense against transient execution attacks that exploit false dependencies from partial address aliasing (the SPOILER attack). It randomizes the physical address bits used in load-store comparisons, cutting misspeculation to 0.0004% while improving integer/FP performance by 2.12%/2.87%, with minimal hardware overhead. Accepted at DATE 2026
+            </div>
+            <div class="pub-authors">
+              <span class="pub-authors">Gayathri Subramanian, P Girinath, Nitya Ranganathan, Kamakoti Veezhinathan, Gopalakrishnan Srinivasan</span>
+            </div>
           </div>
-          <div class="pub-title">PASCAL: Precise and Efficient ANN-SNN Conversion using Spike Accumulation and Adaptive Layerwise Activation</div>
-          <div class="pub-desc">A mathematically grounded method to convert ANNs to SNNs with minimal inference timesteps. ResNet-34 achieves ~74% ImageNet accuracy with a 56× reduction in timesteps over prior methods.</div>
-          <span class="pub-link">arxiv.org/abs/2505.01730</span>
-        </div>
-      </a>
+        </a>
 
-      <div class="pub-card pub-card-static">
-        <div class="pub-year">2025</div>
-        <div class="pub-body">
-          <div class="pub-badges">
-            <span class="badge badge-blue">IEEE ISVLSI</span>
-            <span class="badge badge-amber">Hardware</span>
+        <div class="pub-card">
+          <div class="pub-year">2026</div>
+          <div class="pub-body">
+            <div class="pub-badges">
+              <span class="badge badge-blue">IEEE ISVLSI 2026</span>
+              <span class="badge badge-amber">Hardware Accelerator</span>
+              <span class="badge badge-blue">SNN</span>
+            </div>
+            <div class="pub-title">APEX: A Dual-Sparsity Accelerator for Precise and Efficient SNN Inference</div>
+            <div class="pub-desc">
+              APex is a hardware accelerator design that simultaneously exploits both spatial sparsity (zero activations within a timestep) and temporal sparsity (silent neurons across timesteps) in SNNs, enabling significant energy and compute savings on neuromorphic hardware. Published at IEEE International Symposium on VLSI (ISVLSI).
+            </div>
+            <div class="pub-affil">Devgokul Bawa Venkatesh, Sreeram Radhakrishnan, Rajshekhar Rakshit, Gopalakrishnan Srinivasan </div>
           </div>
-          <div class="pub-title">APEX: A Dual-Sparsity Accelerator for Precise and Efficient SNN Inference</div>
-          <div class="pub-desc">Exploiting both spatial and temporal sparsity in SNNs simultaneously for efficient neuromorphic accelerator design, presented at IEEE ISVLSI.</div>
         </div>
       </div>
-
-      <a class="pub-card" href="https://arxiv.org/abs/2509.26003" target="_blank">
-        <div class="pub-year">2024</div>
-        <div class="pub-body">
-          <div class="pub-badges">
-            <span class="badge badge-teal">Energy Based Models</span>
-            <span class="badge badge-blue">Bio-Inspired Learning</span>
-          </div>
-          <div class="pub-title">Scaling Equilibrium Propagation to Deeper Networks</div>
-          <div class="pub-desc">Extending the Equilibrium Propagation framework to scale on deeper architectures, bridging the gap with standard backpropagation in practical settings.</div>
-        </div>
-      </a>
 
     </div>
 
@@ -187,13 +202,15 @@
     <!-- <h2 class="section-title">Lab Director</h2> -->
 
     <div class="pi-card">
-      <div class="pi-avatar">GS</div>
+      <div class="member-avatar"><img src="images/humans/gopal.png" alt="GS"></div>
       <div>
         <div class="pi-name">Gopalakrishnan Srinivasan</div>
         <div class="pi-role">Assistant Professor &amp; Narayanan Family Foundation Fellow</div>
         <div class="pi-dept">Department of Computer Science and Engineering, IIT Madras, Chennai, India.</div>
         <div class="mt-sm">
-          <a class="member-link" href="mailto:sgopal@cse.iitm.ac.in">✉ sgopal@cse.iitm.ac.in</a>
+          <a class="member-link" href="mailto:sgopal@cse.iitm.ac.in" style="display:inline-flex;align-items:center;gap:5px;"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="#EA4335" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h1.223l9.056 6.716c.075.056.166.084.257.084s.182-.028.257-.084l9.056-6.716h1.223c.904 0 1.636.732 1.636 1.636z"/></svg>Email</a>
+          <a class="member-link" href="https://scholar.google.com/citations?user=ynJrDpAAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.024 14.978 9.5 12 9.5c-2.977 0-5.548 1.524-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>Scholar</a>
+          <a class="member-link" href="https://www.linkedin.com/in/gopalakrishnan-srinivasan-ab442420/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
         </div>
       </div>
     </div>
