@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winter School | BrainSeek Lab</title>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">
+    <img src="images/iit-madras-bg.png" alt="IIT Madras" class="nav-logo">
+    <img src="images/logo3-bg.png" alt="BrainSeek Lab" class="nav-logo">
+    <!-- <span ></span>BrainSeek Lab -->
+  </a>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="members.html">Members</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="teaching.html" class="active">Teaching</a></li>
+    <li><a href="facility.html">Facility</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li>
+      <a href="https://github.com/BrainSeek-Lab" target="_blank" rel="noopener" title="GitHub" style="display:flex;align-items:center;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.19 1.78 1.19 1.03 1.78 2.71 1.26 3.37.97.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.06.78 2.14 0 1.54-.01 2.79-.01 3.17 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<div class="page">
+
+  <div class="hero-sm">
+    <div class="section-label section-label-sm">Winter School 2026</div>
+    <h1>Winter School</h1>
+    <p>From fundamentals to the state of the art in Transformers, LLM systems and hardware.</p>
+    <div class="ws-meta">
+      <span>Mon 23 Nov 2026 → Wed 13 Jan 2027</span>
+      <span>31 sessions · Monday to Friday</span>
+      <span>Each session: 1 hour · 15-minute break · 1 hour</span>
+    </div>
+    <div class="ws-sheet">
+      <span>Presenters, slides and notes for each session are in the shared sheet.</span>
+      <a class="btn btn-primary" href="https://docs.google.com/spreadsheets/d/1sWpdZlSDotcHZweO075949fgjd5wEEL9ihF_Bq-bt24/edit?usp=sharing" target="_blank" rel="noopener">Open the session sheet</a>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section ws-section">
+    <div class="ws-week">
+      <div class="ws-wk">Week 1<b>23 Nov – 27 Nov</b></div>
+      <div class="ws-days">
+        <div class="ws-tile"><div class="ws-top"><span>Mon 23 Nov</span><b>S1</b></div><div class="ws-blk"><div class="ws-track">Attention</div><h3>Attention, the Transformer block and activation functions</h3><p>Query, key, value (QKV) scaled dot-product attention, multi-head attention (MHA), RMSNorm (root-mean-square normalization), feed-forward network (FFN), rotary position embedding (RoPE); activation functions: rectified linear unit (ReLU), Gaussian error linear unit (GELU), sigmoid linear unit (SiLU), gated linear units (SwiGLU) and softmax</p></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Tue 24 Nov</span><b>S2</b></div><div class="ws-blk"><div class="ws-track">Attention</div><h3>KV cache, MQA, GQA and MLA</h3><p>Key–value (KV) cache; multi-query attention (MQA), grouped-query attention (GQA) and multi-head latent attention (MLA)</p></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Wed 25 Nov</span><b>S3</b></div><div class="ws-blk"><div class="ws-track">Attention</div><h3>Sparse and linear attention</h3><p>Sliding-window and local/global attention, kernelized linear attention, Native Sparse Attention (NSA)</p></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Thu 26 Nov</span><b>S4</b></div><div class="ws-blk"><div class="ws-track">Attention</div><h3>RWKV, state-space models and DeltaNet</h3><p>Receptance Weighted Key Value (RWKV), state-space models (SSMs) such as Mamba, and delta-rule linear attention</p></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Fri 27 Nov</span><b>S5</b></div><div class="ws-blk ws-arch"><div class="ws-track">Architecture track</div><h3>Caches and prefetchers: fundamentals to SOTA</h3><p>Average memory access time (AMAT), memory-level parallelism (MLP) and cache replacement; state-of-the-art (SOTA) data prefetchers: spatial (Bingo), delta-based (SPP, Berti), temporal (Triangel), learned (Pythia) and recent Data Prefetching Championship (DPC) winners</p></div></div>
+      </div>
+    </div>
+    <div class="ws-week">
+      <div class="ws-wk">Week 2<b>30 Nov – 4 Dec</b></div>
+      <div class="ws-days">
+        <div class="ws-tile"><div class="ws-top"><span>Mon 30 Nov</span><b>S6</b></div><div class="ws-blk"><div class="ws-track">Systems &amp; serving</div><h3>Transformer execution on GPUs and CPUs</h3><p>Graphics processing unit (GPU) execution, tensor cores, memory hierarchy, roofline model; CPU SIMD and Advanced Matrix Extensions (AMX)</p><div class="ws-papers"><a href="https://arxiv.org/abs/2211.05102" target="_blank" rel="noopener"><span class="ws-k">arXiv</span>Efficiently Scaling Transformer Inference (Pope et al., MLSys 2023)</a><a href="https://arxiv.org/abs/2007.00072" target="_blank" rel="noopener"><span class="ws-k">arXiv</span>Data Movement Is All You Need (Ivanov et al., MLSys 2021)</a></div></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Tue 1 Dec</span><b>S7</b></div><div class="ws-blk"><div class="ws-track">Attention</div><h3>FlashAttention</h3><p>Input/output-aware exact attention: online softmax, tiling into on-chip SRAM, recomputation; FlashAttention-2</p></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Wed 2 Dec</span><b>S8</b></div><div class="ws-blk"><div class="ws-track">Systems &amp; serving</div><h3>FlashAttention on modern GPUs and decode kernels</h3><p>FlashAttention-3 (Hopper), Flash-Decoding, PagedAttention, FlashInfer and FlashMLA kernels; Triton lab</p></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Thu 3 Dec</span><b>S9</b></div><div class="ws-blk"><div class="ws-track">Models &amp; training</div><h3>Decoder models: GPT-2, OPT and LLaMA</h3><p>Generative Pre-trained Transformer 2 (GPT-2), Open Pre-trained Transformer (OPT), Large Language Model Meta AI (LLaMA); scaling laws</p></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Fri 4 Dec</span><b>S10</b></div><div class="ws-blk ws-arch"><div class="ws-track">Architecture track</div><h3>Data prefetching and TLB prefetching</h3><p>Global-offset data prefetching for server workloads; translation lookaside buffer (TLB) prefetching with page-table-embedded deltas</p><div class="ws-papers"><span class="ws-paper-plain"><span class="ws-k">Paper</span>Toppy: Global Offset-based Data Prefetcher</span><a href="https://arxiv.org/abs/2610.08483" target="_blank" rel="noopener"><span class="ws-k">arXiv</span>Trail: Temporal TLB Prefetching</a></div></div></div>
+      </div>
+    </div>
+    <div class="ws-week">
+      <div class="ws-wk">Week 3<b>7 Dec – 11 Dec</b></div>
+      <div class="ws-days">
+        <div class="ws-tile"><div class="ws-top"><span>Mon 7 Dec</span><b>S11</b></div><div class="ws-blk"><div class="ws-track">Models &amp; training</div><h3>Mixture-of-Experts and modern open models</h3><p>Mixture-of-Experts (MoE) routing; DeepSeek-V3, Qwen3, Gemma 3, gpt-oss and Kimi K2</p></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Tue 8 Dec</span><b>S12</b></div><div class="ws-blk"><div class="ws-track">Models &amp; training</div><h3>LLM training: pretraining to reinforcement learning</h3><p>Large language model (LLM) pretraining, supervised fine-tuning (SFT), RL from human feedback (RLHF), direct preference optimization (DPO), group relative policy optimization (GRPO)</p><div class="ws-papers"><a href="https://arxiv.org/abs/2610.40564" target="_blank" rel="noopener"><span class="ws-k">arXiv</span>Training Foundation Models with a Single Algorithm</a></div></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Wed 9 Dec</span><b>S13</b></div><div class="ws-blk"><div class="ws-track">Agents</div><h3>Harnesses for chat, code and agents</h3><p>Chat templates, tool calling, ReAct (reasoning + acting) agent loops, Model Context Protocol (MCP), coding agents</p></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Thu 10 Dec</span><b>S14</b></div><div class="ws-blk"><div class="ws-track">Systems &amp; serving</div><h3>Model characterization on CPUs and GPUs</h3><p>Profiling methodology; general matrix multiply (GEMM) vs non-GEMM runtime breakdown</p></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Fri 11 Dec</span><b>S15</b></div><div class="ws-blk ws-arch"><div class="ws-track">Architecture track</div><h3>Instruction caching and LLC replacement</h3><p>Criticality-aware L2 instruction caching; last-level cache (LLC) replacement in sliced many-core caches</p><div class="ws-papers"><a href="https://doi.org/10.1145/3779212.3790175" target="_blank" rel="noopener"><span class="ws-k">DOI</span>ICARUS: Instruction Caching for Datacenter Apps</a><a href="https://doi.org/10.1145/3725843.3756028" target="_blank" rel="noopener"><span class="ws-k">DOI</span>Drishti: Slicing-aware LLC Replacement</a></div></div></div>
+      </div>
+    </div>
+    <div class="ws-week">
+      <div class="ws-wk">Week 4<b>14 Dec – 18 Dec</b></div>
+      <div class="ws-days">
+        <div class="ws-tile"><div class="ws-top"><span>Mon 14 Dec</span><b>S16</b></div><div class="ws-blk"><div class="ws-track">Systems &amp; serving</div><h3>LLM serving systems</h3><p>Continuous batching, PagedAttention (vLLM), chunked prefill, prefill/decode disaggregation, speculative decoding</p></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Tue 15 Dec</span><b>S17</b></div><div class="ws-blk"><div class="ws-track">Systems &amp; serving</div><h3>KV cache management and compression</h3><p>Key–value cache sizing, eviction (StreamingLLM, H2O), quantization (KIVI) and prefix sharing (RadixAttention)</p></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Wed 16 Dec</span><b>S18</b></div><div class="ws-blk"><div class="ws-track">Systems &amp; serving</div><h3>KV cache characterization</h3><p>Key–value cache reuse, lifetime and footprint across chat, retrieval-augmented generation (RAG) and agent traces; tiered KV storage</p><div class="ws-papers"><span class="ws-paper-plain"><span class="ws-k">Paper</span>The Storage View of KV Cache</span></div></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Thu 17 Dec</span><b>S19</b></div><div class="ws-blk"><div class="ws-track">Compression</div><h3>Quantization fundamentals and number formats</h3><p>Integer and floating-point quantization, FP8, microscaling (MX) block formats and NVFP4</p></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Fri 18 Dec</span><b>S20</b></div><div class="ws-blk"><div class="ws-track">Compression</div><h3>Quantization methods for Transformers</h3><p>GPTQ, activation-aware weight quantization (AWQ), SmoothQuant, rotation-based QuaRot and SpinQuant, BitNet</p></div></div>
+      </div>
+    </div>
+    <div class="ws-week">
+      <div class="ws-wk">Week 5<b>21 Dec – 25 Dec</b></div>
+      <div class="ws-days">
+        <div class="ws-tile"><div class="ws-top"><span>Mon 21 Dec</span><b>S21</b></div><div class="ws-blk"><div class="ws-track">Compression</div><h3>Block quantization formats and hardware</h3><p>Hierarchical scaling block quantization (HBQ) and micro-inverted scaling (MiX) with their accelerator datapaths</p><div class="ws-papers"><a href="https://arxiv.org/abs/2609.00450" target="_blank" rel="noopener"><span class="ws-k">arXiv</span>HBQ: Hierarchical Scaling Block Quantization</a><a href="https://arxiv.org/abs/2609.19683" target="_blank" rel="noopener"><span class="ws-k">arXiv</span>MiX: Micro-Inverted-Scaling for VLMs</a></div></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Tue 22 Dec</span><b>S22</b></div><div class="ws-blk"><div class="ws-track">Compression</div><h3>Pruning and sparsity in Transformers</h3><p>Unstructured, N:M and structured pruning; SparseGPT, Wanda, token merging (ToMe), sparse attention hardware</p></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Wed 23 Dec</span><b>S23</b></div><div class="ws-blk"><div class="ws-track">Diffusion</div><h3>Diffusion model fundamentals</h3><p>Denoising diffusion probabilistic models (DDPM), score-based models, denoising diffusion implicit models (DDIM), classifier-free guidance, flow matching</p></div></div>
+        <div class="ws-tile ws-off"><div class="ws-top"><span>Thu 24 Dec</span></div><div class="ws-off-label">Holiday</div></div>
+        <div class="ws-tile ws-off"><div class="ws-top"><span>Fri 25 Dec</span></div><div class="ws-off-label">Christmas</div></div>
+      </div>
+    </div>
+    <div class="ws-week">
+      <div class="ws-wk">Week 6<b>28 Dec – 1 Jan</b></div>
+      <div class="ws-days">
+        <div class="ws-tile ws-off"><div class="ws-top"><span>Mon 28 Dec</span></div><div class="ws-off-label">Holiday</div></div>
+        <div class="ws-tile ws-off"><div class="ws-top"><span>Tue 29 Dec</span></div><div class="ws-off-label">Holiday</div></div>
+        <div class="ws-tile ws-off"><div class="ws-top"><span>Wed 30 Dec</span></div><div class="ws-off-label">Holiday</div></div>
+        <div class="ws-tile ws-off"><div class="ws-top"><span>Thu 31 Dec</span></div><div class="ws-off-label">Holiday</div></div>
+        <div class="ws-tile ws-off"><div class="ws-top"><span>Fri 1 Jan</span></div><div class="ws-off-label">New Year</div></div>
+      </div>
+    </div>
+    <div class="ws-week">
+      <div class="ws-wk">Week 7<b>4 Jan – 8 Jan</b></div>
+      <div class="ws-days">
+        <div class="ws-tile"><div class="ws-top"><span>Mon 4 Jan</span><b>S24</b></div><div class="ws-blk"><div class="ws-track">Diffusion</div><h3>Diffusion workload characterization</h3><p>Diffusion Transformers (DiT), latent token counts, compute profile vs LLM decoding, 4-bit diffusion, diffusion LLMs</p></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Tue 5 Jan</span><b>S25</b></div><div class="ws-blk"><div class="ws-track">Hardware</div><h3>AI accelerators: systolic arrays and TPUs</h3><p>Systolic-array dataflows, on-chip buffers, Tensor Processing Unit (TPU) generations, accelerator interconnect</p><div class="ws-papers"><span class="ws-paper-plain"><span class="ws-k">Paper</span>Designing AI Chip Hardware and Software (Roune)</span></div></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Wed 6 Jan</span><b>S26</b></div><div class="ws-blk"><div class="ws-track">Hardware</div><h3>Transformer accelerators and the industry landscape</h3><p>Attention accelerators; GPU, TPU, Trainium, Groq and Cerebras designs; compiler and kernel software stacks</p><div class="ws-papers"><span class="ws-paper-plain"><span class="ws-k">Paper</span>Designing AI Chip Hardware and Software (Roune)</span></div></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Thu 7 Jan</span><b>S27</b></div><div class="ws-blk"><div class="ws-track">Hardware</div><h3>RVV and RVM for Transformers</h3><p>RISC-V Vector extension (RVV) and RISC-V Matrix extensions (RVM) for GEMM, softmax and normalization kernels</p></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Fri 8 Jan</span><b>S28</b></div><div class="ws-blk"><div class="ws-track">Agents</div><h3>Agentic AI workload characterization</h3><p>Where time goes in AI agents: CPU-side tools vs GPU decoding, prefix-cache reuse, scheduling</p><div class="ws-papers"><a href="https://arxiv.org/abs/2511.00739" target="_blank" rel="noopener"><span class="ws-k">arXiv</span>Agentic AI Execution: A CPU-Centric Perspective</a><a href="https://arxiv.org/abs/2605.26297" target="_blank" rel="noopener"><span class="ws-k">arXiv</span>Agentic AI Workload Characterization</a></div></div></div>
+      </div>
+    </div>
+    <div class="ws-week">
+      <div class="ws-wk">Week 8<b>11 Jan – 15 Jan</b></div>
+      <div class="ws-days">
+        <div class="ws-tile"><div class="ws-top"><span>Mon 11 Jan</span><b>S29</b></div><div class="ws-blk"><div class="ws-track">Agents</div><h3>Coding agents and long-context cost</h3><p>Real coding-agent traces (Claude Code, Codex) and context compaction vs long context windows</p><div class="ws-papers"><a href="https://arxiv.org/abs/2606.30560" target="_blank" rel="noopener"><span class="ws-k">arXiv</span>TraceLab: Coding Agent Workloads</a><a href="https://arxiv.org/abs/2611.05306" target="_blank" rel="noopener"><span class="ws-k">arXiv</span>You don&#x27;t need long context</a></div></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Tue 12 Jan</span><b>S30</b></div><div class="ws-blk"><div class="ws-track">Security</div><h3>Security of models and agents</h3><p>Jailbreaks, prompt injection, training-data extraction, model stealing and backdoors</p></div></div>
+        <div class="ws-tile"><div class="ws-top"><span>Wed 13 Jan</span><b>S31</b></div><div class="ws-blk"><div class="ws-track">Security</div><h3>Systems security for AI, and closing</h3><p>Side channels in LLM serving, GPU memory leaks, Rowhammer attacks on weights, confidential computing</p></div></div>
+        <div class="ws-tile ws-empty" aria-hidden="true"></div>
+        <div class="ws-tile ws-empty" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-brand">BrainSeek Lab</div>
+  <div class="footer-copy">© 2025 BrainSeek Lab, IIT Madras · Chennai, India</div>
+</footer>
+
+<script src="Nav.js"></script>
+</body>
+</html>
